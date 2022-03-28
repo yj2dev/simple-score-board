@@ -5,22 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>점수판</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>스코어보드</title>
 </head>
 <body>
-<section>
-    <article>
-        <div class="left-team">왼쪽팀</div>
-        <div class="team-score">0</div>
-    </article>
-
-    <article>
-        <div class="right-team">오른쪽팀</div>
-        <div class="team-score">0</div>
-
-    </article>
-
-</section>
-    <script src="index.js"/>
+    <section>
+        <article id="left-team">
+            <div class="title">왼쪽팀</div>
+            <div class="score" id="left-score">0</div>
+            <button class="btn-up-left" onclick="onClickUpLeftScore()"></button>
+            <button class="btn-down-left" onclick="onClickDownLeftScore()"></button>
+        </article>
+        
+        <article id="right-team">
+            <div class="title">오른쪽팀</div>
+            <div class="score" id="right-score">0</div>
+            <button class="btn-up-right" onclick="onClickUpRightScore()"></button>
+            <button class="btn-down-right" onclick="onClickDownRightScore()"></button>
+        </article>
+        <button class="btn-reset" onclick="onClickResetScore()">점수 초기화</button>
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>

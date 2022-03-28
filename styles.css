@@ -1,0 +1,84 @@
+body {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    height:100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+}
+section {
+    display:flex;
+    flex-direction: row;
+}
+article {
+    width:100%;
+    height:100vh;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score{
+    font-size:32em;
+}
+#left-team {
+    position: relative;
+    background-color: #e74c3c;
+}
+#right-team {
+    position: relative;
+    background-color: #3498db;
+}
+.title {
+    position: absolute;
+    top:0;
+    width:100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size:2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding:8px 0;
+}
+article button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width:100%;
+    height:50%;
+}
+.btn-up-left {
+    position: absolute;
+    top:0;
+    left:0;
+    
+}
+.btn-down-left {
+    position:absolute;
+    bottom: 0;
+    left:0;
+
+}
+.btn-up-right {
+    position: absolute;
+    top:0;
+    right:0;
+    
+}
+.btn-down-right {
+    position:absolute;
+    bottom: 0;
+    right:0;
+}
+.btn-reset {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    padding: 8px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    outline: none;
+    color:#ffffff;
+    font-size:2em;
+}
